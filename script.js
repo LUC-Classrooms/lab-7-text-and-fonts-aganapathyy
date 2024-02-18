@@ -9,9 +9,11 @@ function setup() {
 
 function draw() {
   background(200);
-  textSize(16);
-  text("one small step for a man ...", 20, 60);
-  textSize(32);
-  text("one giant leap for mankind.", 20, 160);
+  textSize(18);
+  if (mouseIsPressed) {
+    text("but then i forget :(", 20, 60);
+  } else {
+    text("sometimes i think...", 20, 60);
+  }
 
 }
